@@ -56,7 +56,7 @@ const MessageForm = (props) => {
 	 </form>
 	 		 <button className="send-button logout" onClick={logoutClick}>
 			  LOGOUT
-	   			</button>
+	   		</button>
 	   </>
  )
 }
