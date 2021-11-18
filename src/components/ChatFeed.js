@@ -23,6 +23,7 @@ const ChatFeed = (props) => {
 		/>
 	  ));
 
+
 	// Function that takes care of all the message rendering & determines whether messages are mine or theirs
 
 	const renderMessages = () => {
@@ -49,6 +50,7 @@ const ChatFeed = (props) => {
 			)
 		})
 	}
+
 
 	if (!chat) return 'Loading...';
 

@@ -20,14 +20,15 @@ const MessageForm = (props) => {
 	const handleUpload = (e) => {
 		sendMessage(creds, chatId, { files: e.target.files, text: '' })
 	}
-
-	const logoutClick = () => {
+	function logoutClick() {
 		let confirmation = window.confirm("Are you sure you want to log out?");
 		if (confirmation) {
 			localStorage.clear();
 			window.location.reload();
 		}
 	}
+
+
  return (
 	 <>
 	 <form className="message-form" onSubmit={submitHandler}>
@@ -54,9 +55,9 @@ const MessageForm = (props) => {
 				<SendOutlined className="send-icon"/>
 		 </button>
 	 </form>
-	 		 <button className="send-button logout" onClick={logoutClick}>
-			  LOGOUT
-	   		</button>
+	 <button className="send-button logout" onClick={logoutClick}>
+			 	 LOGOUT
+	   			</button>
 	   </>
  )
 }
