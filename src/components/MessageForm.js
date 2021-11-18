@@ -20,7 +20,16 @@ const MessageForm = (props) => {
 	const handleUpload = (e) => {
 		sendMessage(creds, chatId, { files: e.target.files, text: '' })
 	}
+
+	const logoutClick = () => {
+		let confirmation = window.confirm("Are you sure you want to log out?");
+		if (confirmation) {
+			localStorage.clear();
+			window.location.reload();
+		}
+	}
  return (
+	 <>
 	 <form className="message-form" onSubmit={submitHandler}>
 		 <input
 		 className="message-input"
@@ -41,10 +50,14 @@ const MessageForm = (props) => {
 			 style={{ display: 'none' }}
 			 onChange = {handleUpload}
 		 />
-		 <button type="submit" className="send-buttoon">
+		 <button type="submit" className="send-button">
 				<SendOutlined className="send-icon"/>
 		 </button>
 	 </form>
+	 		 <button className="send-button logout" onClick={logoutClick}>
+			  LOGOUT
+	   			</button>
+	   </>
  )
 }
 
