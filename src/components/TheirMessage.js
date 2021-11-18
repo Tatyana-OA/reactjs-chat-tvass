@@ -10,7 +10,7 @@ const TheirMessage = ({lastMessage, message}) => {
 
 			)}
 			{
-				message?.attachhments?.length>0
+				message?.attachments?.length>0
 					? (
 							<img
 							src={message.attachments[0].file}

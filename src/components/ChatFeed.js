@@ -12,6 +12,19 @@ const ChatFeed = (props) => {
 
 	const chat = chats && chats[activeChat];
 
+	const renderReadReceipts = (message, isMyMessage) => {
+		return chat.people.map((person,index) => person.last_read === message.id && (
+				<div
+					key={`read_${index}`}
+					className="read-receipt"
+					style={{
+						float: isMyMessage ? 'right' : 'left',
+						backgroundImage: `url(${person?.person?.avatar})`,
+					}}
+				/>
+			))
+	}
+
 	// Function that takes care of all the message rendering & determines whether messages are mine or theirs
 
 	const renderMessages = () => {
@@ -31,7 +44,7 @@ const ChatFeed = (props) => {
 					</div>
 					<div className="read-receipts"
 					style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px'}}>
-
+						{renderReadReceipts(message, isMyMessage)}
 					</div>
 
 				</div>
