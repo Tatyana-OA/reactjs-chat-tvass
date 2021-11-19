@@ -34,3 +34,19 @@ You can login into the chat system and type messages.
 
 A logout functionality is included so session can be cleared.
 
+# Credentials
+
+### User 1 - Admin
+
+Username: Nexxita
+Password: Bananas
+
+### User 2 - A certain "hunter"
+
+Username: John
+Password: John
+
+### User 3 - A cat, because it's the internet
+
+Username: Deathwing
+Password: meow
