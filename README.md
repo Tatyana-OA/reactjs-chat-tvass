@@ -46,7 +46,7 @@ Password: Bananas
 Username: John
 Password: John
 
-### User 3 - A cat, because it's the internet
+### User 3 - A cat, because it's the Internet
 
 Username: Deathwing
 Password: meow
