@@ -5,7 +5,7 @@ The Initial setup of the project is done via [Chat Engine.io](https://chatengine
 
 ## See Demo Project Online
 
-You can find the project [by clicking here](http://localhost:3000) to view it in the browser.
+You can find the project [by clicking here](https://tvass-chat-application-reactjs.netlify.app/) to view it in the browser.
 
 ## To run project locally
 
