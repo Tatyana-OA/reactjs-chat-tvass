@@ -39,7 +39,7 @@ A logout functionality is included so session can be cleared.
 ### User 1 - Admin
 
 Username: Nexxita
-Password: Bananas
+Password: bananas
 
 ### User 2 - A certain "hunter"
 
