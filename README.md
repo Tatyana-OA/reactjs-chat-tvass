@@ -44,7 +44,7 @@ Password: bananas
 ### User 2 - A certain "hunter"
 
 Username: John
-Password: John
+Password: john
 
 ### User 3 - A cat, because it's the Internet
 
